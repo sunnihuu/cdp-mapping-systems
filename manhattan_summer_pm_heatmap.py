@@ -115,71 +115,100 @@ def create_manhattan_summer_pm_heatmap():
         else:
             manhattan_ped["summer_pm_count"] = 0
 
-    # Create the heatmap with adjusted layout
-    fig, ax = plt.subplots(1, 1, figsize=(16, 12))
-    plt.subplots_adjust(left=0.15, right=0.95, top=0.9, bottom=0.1)
+    # Create figure with 16:9 vertical layout
+    fig, ax = plt.subplots(1, 1, figsize=(9, 16))  # 16:9 vertical aspect ratio
+
+    # No titles - clean visualization only
 
     # Plot Manhattan base map with subtle boundaries and show different areas
     manhattan_pluto_wgs84.plot(
-        ax=ax, color="lightgray", alpha=0.4, edgecolor="gray", linewidth=0.3
+        ax=ax,
+        color="lightgray",
+        alpha=0.3,
+        edgecolor="gray",
+        linewidth=0.5,
     )
+
+    # Set margins for 16:9 vertical layout - maximize map area
+    plt.subplots_adjust(left=0.10, right=0.90, top=0.95, bottom=0.05)
+
+    # Remove axis labels for cleaner look
+    ax.set_xlabel("")
+    ax.set_ylabel("")
+    ax.set_title("")
+
+    # Remove axis ticks for cleaner appearance
+    ax.set_xticks([])
+    ax.set_yticks([])
 
     # Filter out zero counts
     active_locations = manhattan_ped[manhattan_ped["summer_pm_count"] > 0].copy()
 
+    colorbar_obj = None
     if len(active_locations) > 0:
-        # Create red colormap
-        colors = [
-            "#FFE5E5",
-            "#FFCCCC",
-            "#FFB3B3",
-            "#FF9999",
-            "#FF8080",
-            "#FF6666",
-            "#FF4D4D",
-            "#FF3333",
-            "#FF1A1A",
-            "#FF0000",
-        ]
-        cmap = LinearSegmentedColormap.from_list("summer_pm_pedestrian_red", colors)
+        # Use a vibrant yellow to dark red colormap
+        cmap = "YlOrRd"  # More vibrant than YlOrBr
 
         # Create scatter plot
-        active_locations.plot(
+        plot = active_locations.plot(
             column="summer_pm_count",
             ax=ax,
             cmap=cmap,
-            markersize=100,
-            alpha=0.8,
+            markersize=150,  # Increased from 100
+            alpha=0.9,  # Increased from 0.8
             legend=True,
             legend_kwds={
                 "label": "Summer PM Pedestrian Count",
                 "orientation": "vertical",
                 "shrink": 0.8,
                 "aspect": 30,
-                "location": "upper left",
+                "location": "right",
             },
         )
 
-        # Add clean statistics box
-        stats_text = f"Manhattan Summer PM Pedestrian Activity\n"
-        stats_text += f"Total Locations: {len(active_locations)}\n"
-        stats_text += (
-            f"Average Count: {active_locations['summer_pm_count'].mean():.0f}\n"
-        )
-        stats_text += f"Max Count: {active_locations['summer_pm_count'].max():.0f}\n"
-        stats_text += f"Min Count: {active_locations['summer_pm_count'].min():.0f}"
+        # Move the colorbar (legend) to the right by 10px (less than before)
+        fig.canvas.draw()  # Ensure the colorbar exists
+        for cax in fig.axes:
+            if cax != ax:
+                pos = cax.get_position()
+                cax.set_position(
+                    (
+                        pos.x0 + 10 / fig.get_figwidth() / fig.dpi,
+                        pos.y0,
+                        pos.width,
+                        pos.height,
+                    )
+                )
 
+        # Move the map to the left by 5px (less than before)
+        pos = ax.get_position()
+        ax.set_position(
+            (pos.x0 - 5 / fig.get_figwidth() / fig.dpi, pos.y0, pos.width, pos.height)
+        )
+
+        # Add clean statistics box
+        avg_count = active_locations["summer_pm_count"].mean()
+        max_count = active_locations["summer_pm_count"].max()
+        # Add statistics box with professional styling
+        stats_text = f"""Statistics:
+• Active Locations: {len(active_locations)}
+• Average Count: {avg_count:,.0f}
+• Maximum Count: {max_count:,.0f}"""
+
+        # Position statistics box professionally
         ax.text(
-            0.02,
-            0.98,
+            0.02,  # Left margin
+            0.98,  # Top margin
             stats_text,
             transform=ax.transAxes,
             fontsize=11,
             verticalalignment="top",
-            horizontalalignment="left",
-            fontweight="bold",
             bbox=dict(
-                boxstyle="round,pad=0.5", facecolor="white", alpha=0.9, edgecolor="red"
+                boxstyle="round,pad=0.5",
+                facecolor="white",
+                alpha=0.9,
+                edgecolor="gray",
+                linewidth=0.5,
             ),
         )
 
@@ -194,13 +223,21 @@ def create_manhattan_summer_pm_heatmap():
             fontsize=14,
         )
 
-        ax.set_title(
-            "Manhattan Summer PM Pedestrian Activity Heatmap\nAfternoon/Evening Hours (June-August)",
-            fontsize=18,
-            fontweight="bold",
-            pad=20,
-            loc="left",
+    # Title and subtitle
+    ax.set_title(
+        "Manhattan Summer PM Pedestrian Activity Heatmap\nAfternoon/Evening Hours (June-August)",
+        fontsize=18,
+        fontweight="bold",
+        pad=20,
+        loc="left",
+    )
+    # Move the title to the left by 15px (less than before)
+    ax.title.set_position(
+        (
+            ax.title.get_position()[0] - 15 / fig.get_figwidth() / fig.dpi,
+            ax.title.get_position()[1],
         )
+    )
     ax.axis("off")
 
     plt.tight_layout()
