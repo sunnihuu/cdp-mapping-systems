@@ -137,10 +137,10 @@ def plot_manhattan_base(ax, manhattan_pluto_wgs84):
     """Plot Manhattan base map."""
     manhattan_pluto_wgs84.plot(
         ax=ax,
-        color="lightgray",
-        alpha=0.3,
-        edgecolor="none",  # Remove border
-        linewidth=0,
+        color="lightblue",  # More visible color
+        alpha=0.5,  # More visible
+        edgecolor="gray",  # Add subtle boundaries
+        linewidth=0.3,  # Thin boundaries
     )
 
 
@@ -315,50 +315,5 @@ def create_manhattan_summer_pm_heatmap(ped_df=None, save_figure=True):
     return fig, ax, manhattan_ped, active_locations
 
 
-# For notebook usage, you can also call individual functions:
-def load_and_process_data():
-    """Load and process data for notebook analysis."""
-    ped_df = pd.read_csv("Data/Bi-Annual_Pedestrian_Counts_20250709.csv")
-    ped_df = extract_coordinates(ped_df)
-    ped_gdf = create_pedestrian_gdf(ped_df)
-    manhattan_pluto_wgs84, manhattan_bounds = load_manhattan_bounds()
-    manhattan_ped = filter_manhattan_data(ped_gdf, manhattan_bounds)
-    return manhattan_ped, manhattan_pluto_wgs84
-
-
-def main(manhattan_ped=None, manhattan_pluto_wgs84=None, save_figure=True):
-    """Create just the heatmap visualization from processed data."""
-    print("🔥 Creating Manhattan Summer PM Pedestrian Activity Heatmap...")
-
-    if manhattan_ped is None or manhattan_pluto_wgs84 is None:
-        # Load data if not provided
-        manhattan_ped, manhattan_pluto_wgs84 = load_and_process_data()
-        print(f"   Manhattan pedestrian locations: {len(manhattan_ped)}")
-
-    summer_pm_columns = find_summer_pm_columns(manhattan_ped)
-    print(f"   Found {len(summer_pm_columns)} summer PM columns: {summer_pm_columns}")
-
-    manhattan_ped = calculate_summer_pm_counts(manhattan_ped, summer_pm_columns)
-
-    fig, ax = setup_plot()
-    plot_manhattan_base(ax, manhattan_pluto_wgs84)
-
-    active_locations = manhattan_ped[manhattan_ped["summer_pm_count"] > 0].copy()
-    plot_heatmap(ax, active_locations, fig)
-
-    if save_figure:
-        save_plot(fig)
-        print("   ✅ Manhattan Summer PM Pedestrian Activity Heatmap saved!")
-
-    print_summary(active_locations)
-    return fig, ax, active_locations
-
-
-def create_heatmap_notebook():
-    """Simple function for notebook usage - loads data and creates heatmap."""
-    manhattan_ped, manhattan_pluto_wgs84 = load_and_process_data()
-    return main(manhattan_ped, manhattan_pluto_wgs84)
-
-
 if __name__ == "__main__":
-    main()
+    create_manhattan_summer_pm_heatmap()
