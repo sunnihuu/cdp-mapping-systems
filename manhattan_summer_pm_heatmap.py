@@ -172,12 +172,16 @@ def plot_heatmap(ax, active_locations, fig):
             "shrink": 0.6,  # Smaller colorbar
             "aspect": 20,  # Thinner colorbar
             "location": "right",
-            "labelpad": 15,  # Move label to right side
         },
     )
 
     # Adjust colorbar and map positions
     adjust_layout(fig, ax)
+
+    # Move colorbar label to the right side
+    for cax in fig.axes:
+        if cax != ax:
+            cax.set_ylabel("Summer PM Pedestrian Count", rotation=270, va="bottom")
 
     # Add title
     ax.set_title(
@@ -322,9 +326,18 @@ def load_and_process_data():
     return manhattan_ped, manhattan_pluto_wgs84
 
 
-def create_heatmap_only(manhattan_ped, manhattan_pluto_wgs84, save_figure=True):
+def main(manhattan_ped=None, manhattan_pluto_wgs84=None, save_figure=True):
     """Create just the heatmap visualization from processed data."""
+    print("🔥 Creating Manhattan Summer PM Pedestrian Activity Heatmap...")
+
+    if manhattan_ped is None or manhattan_pluto_wgs84 is None:
+        # Load data if not provided
+        manhattan_ped, manhattan_pluto_wgs84 = load_and_process_data()
+        print(f"   Manhattan pedestrian locations: {len(manhattan_ped)}")
+
     summer_pm_columns = find_summer_pm_columns(manhattan_ped)
+    print(f"   Found {len(summer_pm_columns)} summer PM columns: {summer_pm_columns}")
+
     manhattan_ped = calculate_summer_pm_counts(manhattan_ped, summer_pm_columns)
 
     fig, ax = setup_plot()
@@ -335,9 +348,17 @@ def create_heatmap_only(manhattan_ped, manhattan_pluto_wgs84, save_figure=True):
 
     if save_figure:
         save_plot(fig)
+        print("   ✅ Manhattan Summer PM Pedestrian Activity Heatmap saved!")
 
+    print_summary(active_locations)
     return fig, ax, active_locations
 
 
+def create_heatmap_notebook():
+    """Simple function for notebook usage - loads data and creates heatmap."""
+    manhattan_ped, manhattan_pluto_wgs84 = load_and_process_data()
+    return main(manhattan_ped, manhattan_pluto_wgs84)
+
+
 if __name__ == "__main__":
-    create_manhattan_summer_pm_heatmap()
+    main()
