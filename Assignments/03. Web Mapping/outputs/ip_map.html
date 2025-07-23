@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_206127a25d9c6e34473ed821cbd4e237 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_206127a25d9c6e34473ed821cbd4e237" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_206127a25d9c6e34473ed821cbd4e237 = L.map(
+                "map_206127a25d9c6e34473ed821cbd4e237",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2fd4225cec01bc7c7bfba35920f2b979 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2fd4225cec01bc7c7bfba35920f2b979.addTo(map_206127a25d9c6e34473ed821cbd4e237);
+        
+    
+            var marker_cluster_ab2ec4613f2745c35b57b829fe1f299c = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_c8930d7cf1d0dfad5c8a43b07e2b0d0c = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_9089b5f280b3566f4d3f586d1baa9702 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_981b79b35512b2323bc09ae38af11159 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7ff194b1b3c5d60517fc6acdc07072a = $(`<div id="html_f7ff194b1b3c5d60517fc6acdc07072a" style="width: 100.0%; height: 100.0%;">IP: 2607:f8b0:4006:80c::2008<br>URL: https://www.googletagmanager.com/gtag/js?id=AW-947969594&cx=c&gtm=45fe57l1v9189983210za200&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104952209~104952211</div>`)[0];
+                popup_981b79b35512b2323bc09ae38af11159.setContent(html_f7ff194b1b3c5d60517fc6acdc07072a);
+            
+        
+
+        marker_c8930d7cf1d0dfad5c8a43b07e2b0d0c.bindPopup(popup_981b79b35512b2323bc09ae38af11159)
+        ;
+
+        
+    
+    
+                marker_c8930d7cf1d0dfad5c8a43b07e2b0d0c.setIcon(icon_9089b5f280b3566f4d3f586d1baa9702);
+            
+    
+            var marker_f8eaaf2a3865a9c238acb3bf04ec1a14 = L.marker(
+                [37.7694, -122.3867],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_0a3faefb93ad700af01cab35d346e85b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_512f1f85b79cbcda23acf37ffc7261bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b0a041161e0ff5ac9013cbec6754fd7 = $(`<div id="html_9b0a041161e0ff5ac9013cbec6754fd7" style="width: 100.0%; height: 100.0%;">IP: 69.48.216.7<br>URL: https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvYjE5ZDJlMGU0MDgzODc1NDFiMmVjNTUwMDg2OTNiMWMvZjk1ODZjMzZhYjdkYjg0ZDA5Yjc3N2NlZThjODI5YjEuanBlZw==</div>`)[0];
+                popup_512f1f85b79cbcda23acf37ffc7261bb.setContent(html_9b0a041161e0ff5ac9013cbec6754fd7);
+            
+        
+
+        marker_f8eaaf2a3865a9c238acb3bf04ec1a14.bindPopup(popup_512f1f85b79cbcda23acf37ffc7261bb)
+        ;
+
+        
+    
+    
+                marker_f8eaaf2a3865a9c238acb3bf04ec1a14.setIcon(icon_0a3faefb93ad700af01cab35d346e85b);
+            
+    
+            var marker_5ada729087d8e5d3cf0aa0f7389ec7ec = L.marker(
+                [40.7357, -74.1724],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_86301dc936c2d203ebde68a7f65b4afe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b5a3f4a4db8b435935bcaf1d75f326e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d9e4300e7c5d4959840eabed3a41fab = $(`<div id="html_2d9e4300e7c5d4959840eabed3a41fab" style="width: 100.0%; height: 100.0%;">IP: 199.232.88.84<br>URL: https://ct.pinterest.com/v3/?event=pagevisit&tid=2613594162204&_rnd=0.9540389425940725</div>`)[0];
+                popup_5b5a3f4a4db8b435935bcaf1d75f326e.setContent(html_2d9e4300e7c5d4959840eabed3a41fab);
+            
+        
+
+        marker_5ada729087d8e5d3cf0aa0f7389ec7ec.bindPopup(popup_5b5a3f4a4db8b435935bcaf1d75f326e)
+        ;
+
+        
+    
+    
+                marker_5ada729087d8e5d3cf0aa0f7389ec7ec.setIcon(icon_86301dc936c2d203ebde68a7f65b4afe);
+            
+    
+            var marker_ad266ffb1ad8d8879fb3256b76682dfc = L.marker(
+                [47.674, -122.1215],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_0459000f2fb5b5b700dac8c82528636e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_015d6a8de560fcfb147ec2b64058872b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4face598b7b336a19a10c711edeac35 = $(`<div id="html_c4face598b7b336a19a10c711edeac35" style="width: 100.0%; height: 100.0%;">IP: 2620:1ec:33:1::10<br>URL: https://bat.bing.com/action/0?ti=4050272&Ver=2&mid=f3f15985-bfe0-486c-a850-7bd8b47f215b&bo=3&sid=4c7c173067ce11f08ef739730027be83&vid=4c7c585067ce11f093d0df714df65470&vids=0&msclkid=N&pi=918639831&lg=en-US&sw=1512&sh=982&sc=30&tl=Order%20Food%20Online%20%7C%20Food%20Delivery%20App%20%7C%20Uber%20Eats&p=https%3A%2F%2Fwww.ubereats.com%2Ffeed%3FdiningMode%3DDELIVERY%26pl%3DJTdCJTIyYWRkcmVzcyUyMiUzQSUyMjgwOCUyMENvbHVtYnVzJTIwQXZlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyOWRhYWNiODYtMzA3NC1iZmIzLTE1YTYtNGIwODNlNWQ2N2I3JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC43OTQ3MTElMkMlMjJsb25naXR1ZGUlMjIlM0EtNzMuOTY2NzUxJTdE&r=https%3A%2F%2Fauth.uber.com%2F&lt=567&evt=pageLoad&sv=1&asc=G&cdb=AQwR&rn=117181</div>`)[0];
+                popup_015d6a8de560fcfb147ec2b64058872b.setContent(html_c4face598b7b336a19a10c711edeac35);
+            
+        
+
+        marker_ad266ffb1ad8d8879fb3256b76682dfc.bindPopup(popup_015d6a8de560fcfb147ec2b64058872b)
+        ;
+
+        
+    
+    
+                marker_ad266ffb1ad8d8879fb3256b76682dfc.setIcon(icon_0459000f2fb5b5b700dac8c82528636e);
+            
+    
+            var marker_b1cb3a6e2bb44e9f137c5319e21e354b = L.marker(
+                [39.0437, -77.4875],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_0d6d20334c17136640e14684b907e1c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_645aafb2d401cceb5da7e07dee63b54d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8277730e0dc824e332d86afeee32d5e0 = $(`<div id="html_8277730e0dc824e332d86afeee32d5e0" style="width: 100.0%; height: 100.0%;">IP: 54.163.146.91<br>URL: https://sp.analytics.yahoo.com/sp.pl?a=10000&b=Order%20Food%20Online%20%7C%20Food%20Delivery%20App%20%7C%20Uber%20Eats&.yp=10001384&f=https%3A%2F%2Fwww.ubereats.com%2Ffeed%3FdiningMode%3DDELIVERY%26pl%3DJTdCJTIyYWRkcmVzcyUyMiUzQSUyMjgwOCUyMENvbHVtYnVzJTIwQXZlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyOWRhYWNiODYtMzA3NC1iZmIzLTE1YTYtNGIwODNlNWQ2N2I3JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC43OTQ3MTElMkMlMjJsb25naXR1ZGUlMjIlM0EtNzMuOTY2NzUxJTdE&e=https%3A%2F%2Fauth.uber.com%2F&enc=UTF-8&yv=1.16.6&et=custom&ec=stores_eats&ea=view&el=restaurant-list&tagmgr=gtm</div>`)[0];
+                popup_645aafb2d401cceb5da7e07dee63b54d.setContent(html_8277730e0dc824e332d86afeee32d5e0);
+            
+        
+
+        marker_b1cb3a6e2bb44e9f137c5319e21e354b.bindPopup(popup_645aafb2d401cceb5da7e07dee63b54d)
+        ;
+
+        
+    
+    
+                marker_b1cb3a6e2bb44e9f137c5319e21e354b.setIcon(icon_0d6d20334c17136640e14684b907e1c2);
+            
+    
+            var marker_7a9fb57e4b51f4e0b86ce90bb618743d = L.marker(
+                [37.7694, -122.3867],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_4f2ca3ddda95f1a5ce9000da8c71a3da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ed344ae74e6f8bba87068ff8238094d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7623d78bdd034107e6aaa695eb6123ce = $(`<div id="html_7623d78bdd034107e6aaa695eb6123ce" style="width: 100.0%; height: 100.0%;">IP: 104.36.194.7<br>URL: https://www.ubereats.com/_static/client-71062-28e2e22ecdf3992f.js</div>`)[0];
+                popup_0ed344ae74e6f8bba87068ff8238094d.setContent(html_7623d78bdd034107e6aaa695eb6123ce);
+            
+        
+
+        marker_7a9fb57e4b51f4e0b86ce90bb618743d.bindPopup(popup_0ed344ae74e6f8bba87068ff8238094d)
+        ;
+
+        
+    
+    
+                marker_7a9fb57e4b51f4e0b86ce90bb618743d.setIcon(icon_4f2ca3ddda95f1a5ce9000da8c71a3da);
+            
+    
+            var marker_bf5b120dfeefe72abff0e3640b377e35 = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_090bedd4d656f8b394afa4336880ab02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b53ff3683053de23da03e5bc158dc831 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00739280a7d0026e0bf0e29649f3913c = $(`<div id="html_00739280a7d0026e0bf0e29649f3913c" style="width: 100.0%; height: 100.0%;">IP: 2607:f8b0:4006:823::2002<br>URL: https://googleads.g.doubleclick.net/pagead/viewthroughconversion/802198898/?random=1753280581002&cv=11&fst=1753280581002&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be57l1za200zb9189983210zd9189983210&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~104952209~104952211&u_w=1512&u_h=982&url=https%3A%2F%2Fwww.ubereats.com%2Ffeed%3FdiningMode%3DDELIVERY%26pl%3DJTdCJTIyYWRkcmVzcyUyMiUzQSUyMjgwOCUyMENvbHVtYnVzJTIwQXZlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyOWRhYWNiODYtMzA3NC1iZmIzLTE1YTYtNGIwODNlNWQ2N2I3JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC43OTQ3MTElMkMlMjJsb25naXR1ZGUlMjIlM0EtNzMuOTY2NzUxJTdE&ref=https%3A%2F%2Fauth.uber.com%2F&hn=www.googleadservices.com&frm=0&tiba=Order%20Food%20Online%20%7C%20Food%20Delivery%20App%20%7C%20Uber%20Eats&userId=5500c181-f5ff-4a37-91fd-b79066f75c05&ga_uid=G-P1RM71MPFP.e20ef45e-c42f-496f-9f27-a45eb316fdfb&did=dYmQxMT&gdid=dYmQxMT&npa=0&pscdl=noapi&auid=1807822586.1753279619&uaa=arm&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=macOS&uapv=15.5.0&uaw=0&fledge=1&data=event%3Dpage_view&rfmt=3&fmt=4</div>`)[0];
+                popup_b53ff3683053de23da03e5bc158dc831.setContent(html_00739280a7d0026e0bf0e29649f3913c);
+            
+        
+
+        marker_bf5b120dfeefe72abff0e3640b377e35.bindPopup(popup_b53ff3683053de23da03e5bc158dc831)
+        ;
+
+        
+    
+    
+                marker_bf5b120dfeefe72abff0e3640b377e35.setIcon(icon_090bedd4d656f8b394afa4336880ab02);
+            
+    
+            var marker_b7a2831ff1f2c26d7c8a44c8ceaa6a44 = L.marker(
+                [37.7621, -122.3971],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_c98a8b34ea9b421686a6328d2bfccb30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ebda7091715dd96637ec1cb61c6b3897 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c75150970fe53b6176a6c0e6187830e2 = $(`<div id="html_c75150970fe53b6176a6c0e6187830e2" style="width: 100.0%; height: 100.0%;">IP: 162.159.140.229<br>URL: https://t.co/1/i/adsct?bci=4&dv=America%2FNew_York%26en-US%2Cen%2Czh-CN%26Google%20Inc.%26MacIntel%26127%261512%26982%2610%2630%261512%26944%260%26na&eci=4&email_address=7f89665582e8d1a5b0910815a15167f9b331d0016001676aeb431af1e1fa1e21&event=%7B%22contents%22%3A%5B%7B%22contents%22%3A%22d679771b-770e-440b-8a46-656b8b51a1de%22%7D%2C%7B%22contents%22%3A%227563919e-5f5e-501f-b494-1a81ec81c429%22%7D%2C%7B%22contents%22%3A%22cf70b3ba-d372-576a-b4c9-b4dd749c5333%22%7D%2C%7B%22contents%22%3A%22a56671b0-7bf5-5cde-ab8e-cf27abb52447%22%7D%2C%7B%22contents%22%3A%2229cc0a8e-ad62-5b31-bc09-27d668048311%22%7D%2C%7B%22contents%22%3A%22944897d9-2cd4-503c-8137-3a363a11c8d4%22%7D%2C%7B%22contents%22%3A%22d038858f-c582-55d8-9f9a-8c7b3210029d%22%7D%2C%7B%22contents%22%3A%22eadda304-49f6-522f-8bc6-a87048c88827%22%7D%2C%7B%22contents%22%3A%228bb054e2-7312-4d3a-a5fe-d21f582c2f75%22%7D%2C%7B%22contents%22%3A%224ded7e6a-f211-5730-bb07-cdd48bb1736f%22%7D%5D%2C%22currency%22%3A%22USD%22%2C%22conversion_id%22%3A%224803d2128aa935f90dcb2414128dd131%22%7D&event_id=a069f4e1-fb1a-4756-9f59-e4358cdf92de&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=f1d94631-c8bc-41d9-8e59-120674cc9843&tw_document_href=https%3A%2F%2Fwww.ubereats.com%2Ffeed%3FdiningMode%3DDELIVERY%26pl%3DJTdCJTIyYWRkcmVzcyUyMiUzQSUyMjgwOCUyMENvbHVtYnVzJTIwQXZlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyOWRhYWNiODYtMzA3NC1iZmIzLTE1YTYtNGIwODNlNWQ2N2I3JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC43OTQ3MTElMkMlMjJsb25naXR1ZGUlMjIlM0EtNzMuOTY2NzUxJTdE&tw_iframe_status=0&txn_id=tw-o43i6-oc3wp&type=javascript&version=2.3.33</div>`)[0];
+                popup_ebda7091715dd96637ec1cb61c6b3897.setContent(html_c75150970fe53b6176a6c0e6187830e2);
+            
+        
+
+        marker_b7a2831ff1f2c26d7c8a44c8ceaa6a44.bindPopup(popup_ebda7091715dd96637ec1cb61c6b3897)
+        ;
+
+        
+    
+    
+                marker_b7a2831ff1f2c26d7c8a44c8ceaa6a44.setIcon(icon_c98a8b34ea9b421686a6328d2bfccb30);
+            
+    
+            var marker_84ab785023aa78245eb9d482a0fb089e = L.marker(
+                [38.0088, -122.1175],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_ba3ea30ae509826ee12c06db60f2b7d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e7c43143eb2883768c288e9e10b72e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fec9fe05bc31605134e07883d965ca2e = $(`<div id="html_fec9fe05bc31605134e07883d965ca2e" style="width: 100.0%; height: 100.0%;">IP: 2001:4860:4802:34::181<br>URL: https://analytics.google.com/g/collect?v=2&tid=G-P1RM71MPFP&gtm=45je57l1v892266022za200zb9189983210zd9189983210&_p=1753280532148&gcd=13l3l3l3l1l1&npa=0&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~104952209~104952211&gdid=dYmQxMT&cid=1714041780.1753279620&ul=en-us&sr=1512x982&uaa=arm&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=macOS&uapv=15.5.0&uaw=0&are=1&frm=0&pscdl=noapi&_eu=AEAAAAQ&_s=11&dl=https%3A%2F%2Fwww.ubereats.com%2Fstore%2Fbomi-flowers-plants-%26-gifts-brooklyn%2FSLyulcHjXZq5zinOAGX6CQ%3FdiningMode%3DDELIVERY&dr=https%3A%2F%2Fwww.ubereats.com%2Fsearch%3FeventSource%3DsearchHistoryV2%26pl%3DJTdCJTIyYWRkcmVzcyUyMiUzQSUyMjgwOCUyMENvbHVtYnVzJTIwQXZlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyOWRhYWNiODYtMzA3NC1iZmIzLTE1YTYtNGIwODNlNWQ2N2I3JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC43OTQ3MTElMkMlMjJsb25naXR1ZGUlMjIlM0EtNzMuOTY2NzUxJTdE%26q%3DFLOWERS%26sc%3DSEARCH_SUGGESTION%26searchEntered%3Dflower%26searchType%3DGLOBAL_SEARCH%26sf%3DJTVCJTdCJTIydXVpZCUyMiUzQSUyMmNjNWNkYjk1LWE2ZTYtNDM3MS04ZDEwLWEwN2MyMTc1ZTUwOSUyMiUyQyUyMm9wdGlvbnMlMjIlM0ElNUIlN0IlMjJ1dWlkJTIyJTNBJTIyY2M1Y2RiOTUtYTZlNi00MzcxLThkMTAtYTA3YzIxNzVlNTEwJTIyJTdEJTVEJTdEJTVE%26vertical%3DALL&sid=1753279619&sct=1&seg=1&dt=Order%20Bomi%20Flowers%2C%20Plants%20%26%20Gifts%20Menu%20Delivery%E3%80%90Menu%20%26%20Prices%E3%80%91%7C%20New%20York%20City%20%7C%20Uber%20Eats&uid=e20ef45e-c42f-496f-9f27-a45eb316fdfb&en=page_view&_et=1089&tfd=75134</div>`)[0];
+                popup_6e7c43143eb2883768c288e9e10b72e2.setContent(html_fec9fe05bc31605134e07883d965ca2e);
+            
+        
+
+        marker_84ab785023aa78245eb9d482a0fb089e.bindPopup(popup_6e7c43143eb2883768c288e9e10b72e2)
+        ;
+
+        
+    
+    
+                marker_84ab785023aa78245eb9d482a0fb089e.setIcon(icon_ba3ea30ae509826ee12c06db60f2b7d3);
+            
+    
+            var marker_40badf13e8214cdec24d86ec11adf2bc = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_2eed872bdc9dbb341759b9461796fe7c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17fee78a1cc005a9240de0aa1640f88d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12fca7c364da40579faedd09882944d7 = $(`<div id="html_12fca7c364da40579faedd09882944d7" style="width: 100.0%; height: 100.0%;">IP: 2607:f8b0:4006:80a::2004<br>URL: https://www.google.com/pagead/1p-user-list/802198898/?random=1753280600606&cv=11&fst=1753279200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be57l1za200zb9189983210zd9189983210&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~104952209~104952211&u_w=1512&u_h=982&url=https%3A%2F%2Fwww.ubereats.com%2Fstore%2Fbomi-flowers-plants-%2526-gifts-brooklyn%2FSLyulcHjXZq5zinOAGX6CQ&ref=https%3A%2F%2Fauth.uber.com%2F&hn=www.googleadservices.com&frm=0&tiba=Order%20Food%20Online%20%7C%20Food%20Delivery%20App%20%7C%20Uber%20Eats&userId=e20ef45e-c42f-496f-9f27-a45eb316fdfb&ga_uid=G-P1RM71MPFP.e20ef45e-c42f-496f-9f27-a45eb316fdfb&did=dYmQxMT&gdid=dYmQxMT&npa=0&pscdl=noapi&auid=1807822586.1753279619&uaa=arm&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=macOS&uapv=15.5.0&uaw=0&fledge=1&data=event%3Dgtag.config%3Benable_event_matching_conversions%3Dfalse&rfmt=3&fmt=3&is_vtc=1&cid=CAQSlgEA2abss1p-KyzT0y1R_-B-WVfxNjxtd89I-loLSZimGX7Ca2c_XAME-fboAmVJeZuaXVEasIjMnNuM-4A3FerCd0Q6NPcTBn251yTKK0WgUtr-w4e9mEVt_HJ9PbVHA3T8us0fJeAnZN3sqmnzytFsSzs-DDZ6GmKEQ1xzw_Ajby43CboclS2tMWV90Px__ebBOF1O8qI&random=1897588299&rmt_tld=0&ipr=y</div>`)[0];
+                popup_17fee78a1cc005a9240de0aa1640f88d.setContent(html_12fca7c364da40579faedd09882944d7);
+            
+        
+
+        marker_40badf13e8214cdec24d86ec11adf2bc.bindPopup(popup_17fee78a1cc005a9240de0aa1640f88d)
+        ;
+
+        
+    
+    
+                marker_40badf13e8214cdec24d86ec11adf2bc.setIcon(icon_2eed872bdc9dbb341759b9461796fe7c);
+            
+    
+            var marker_bffeee1c662165b989a19cf89a779a22 = L.marker(
+                [47.6062, -122.3321],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_d7f3f43ff7a0ddcff164ae69538577b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43df184ef2e6b540bade1a985884b78f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4c6f4cb117db501acdafe1e77396bb0 = $(`<div id="html_e4c6f4cb117db501acdafe1e77396bb0" style="width: 100.0%; height: 100.0%;">IP: 2600:9000:2511:f400:7:2bfb:7c00:93a1<br>URL: https://tags.tiqcdn.com/utag/uber/eatsv2/prod/utag.190.js?utv=ut4.53.202506252331</div>`)[0];
+                popup_43df184ef2e6b540bade1a985884b78f.setContent(html_e4c6f4cb117db501acdafe1e77396bb0);
+            
+        
+
+        marker_bffeee1c662165b989a19cf89a779a22.bindPopup(popup_43df184ef2e6b540bade1a985884b78f)
+        ;
+
+        
+    
+    
+                marker_bffeee1c662165b989a19cf89a779a22.setIcon(icon_d7f3f43ff7a0ddcff164ae69538577b6);
+            
+    
+            var marker_55a56f336d9c260ef54dd75e1847d8aa = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_98d758a7347dc08384eeee1128a48fb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f765a65c1303b6aaa96e0dd09a99420 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50f8087adb5bfdfd22f70bc906f9fda8 = $(`<div id="html_50f8087adb5bfdfd22f70bc906f9fda8" style="width: 100.0%; height: 100.0%;">IP: 23.216.132.162<br>URL: https://analytics.tiktok.com/i18n/pixel/static/identify_ecbed230.js</div>`)[0];
+                popup_7f765a65c1303b6aaa96e0dd09a99420.setContent(html_50f8087adb5bfdfd22f70bc906f9fda8);
+            
+        
+
+        marker_55a56f336d9c260ef54dd75e1847d8aa.bindPopup(popup_7f765a65c1303b6aaa96e0dd09a99420)
+        ;
+
+        
+    
+    
+                marker_55a56f336d9c260ef54dd75e1847d8aa.setIcon(icon_98d758a7347dc08384eeee1128a48fb2);
+            
+    
+            var marker_d1dd8e0fdd8ce4f1347399f410b52438 = L.marker(
+                [47.6339, -122.3476],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_63f1f7785631a503e9283e70f6d31278 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1548294d9148313f561631b39769c800 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_addd3f9bef8f0266fdb4ad24f668b172 = $(`<div id="html_addd3f9bef8f0266fdb4ad24f668b172" style="width: 100.0%; height: 100.0%;">IP: 35.71.131.137<br>URL: https://insight.adsrvr.org/track/realtimeconversion</div>`)[0];
+                popup_1548294d9148313f561631b39769c800.setContent(html_addd3f9bef8f0266fdb4ad24f668b172);
+            
+        
+
+        marker_d1dd8e0fdd8ce4f1347399f410b52438.bindPopup(popup_1548294d9148313f561631b39769c800)
+        ;
+
+        
+    
+    
+                marker_d1dd8e0fdd8ce4f1347399f410b52438.setIcon(icon_63f1f7785631a503e9283e70f6d31278);
+            
+    
+            var marker_7b0679b6e87724b18f18e1608207e0ed = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_d7fae0d896fc72ab1d51f15440ea33f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d1005ca62cd9198fc5b4448dfbc80d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efed7878df3c5ea0865bee975c07d1f3 = $(`<div id="html_efed7878df3c5ea0865bee975c07d1f3" style="width: 100.0%; height: 100.0%;">IP: 2607:f8b0:4006:816::2002<br>URL: https://td.doubleclick.net/td/rul/947969594?random=1753280533358&cv=11&fst=1753280533358&fmt=3&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be57l1v899738101za200zb9189983210zd9189983210&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~104952209~104952211&u_w=1512&u_h=982&url=https%3A%2F%2Fwww.ubereats.com%2Ffeed%3FdiningMode%3DDELIVERY%26pl%3DJTdCJTIyYWRkcmVzcyUyMiUzQSUyMjgwOCUyMENvbHVtYnVzJTIwQXZlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyOWRhYWNiODYtMzA3NC1iZmIzLTE1YTYtNGIwODNlNWQ2N2I3JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC43OTQ3MTElMkMlMjJsb25naXR1ZGUlMjIlM0EtNzMuOTY2NzUxJTdE&ref=https%3A%2F%2Fauth.uber.com%2F&hn=www.googleadservices.com&frm=0&tiba=Order%20Food%20Online%20%7C%20Food%20Delivery%20App%20%7C%20Uber%20Eats&userId=e20ef45e-c42f-496f-9f27-a45eb316fdfb&ga_uid=G-P1RM71MPFP.e20ef45e-c42f-496f-9f27-a45eb316fdfb&did=dYmQxMT&gdid=dYmQxMT&npa=0&pscdl=noapi&auid=1807822586.1753279619&uaa=arm&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=macOS&uapv=15.5.0&uaw=0&fledge=1&data=event%3Dgtag.config%3Benable_event_matching_conversions%3Dfalse</div>`)[0];
+                popup_5d1005ca62cd9198fc5b4448dfbc80d6.setContent(html_efed7878df3c5ea0865bee975c07d1f3);
+            
+        
+
+        marker_7b0679b6e87724b18f18e1608207e0ed.bindPopup(popup_5d1005ca62cd9198fc5b4448dfbc80d6)
+        ;
+
+        
+    
+    
+                marker_7b0679b6e87724b18f18e1608207e0ed.setIcon(icon_d7fae0d896fc72ab1d51f15440ea33f4);
+            
+    
+            var marker_fdf51052e375fd1dd4a5b4d20a1aa80c = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_9866caa826db6755850ebefcd84687c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f23d66ac7d56f468dc7cd25213f0110 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43ca7470556f0544c8796589d825c1a3 = $(`<div id="html_43ca7470556f0544c8796589d825c1a3" style="width: 100.0%; height: 100.0%;">IP: 2607:f8b0:4006:80c::2004<br>URL: https://www.google.com/pagead/1p-user-list/656448063/?random=1753280533225&cv=11&fst=1753279200000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be57l1v9211773765za200zb9189983210zd9189983210&gcd=13l3l3l3l1l1&dma=0&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104948813~104952209~104952211~104991059&u_w=1512&u_h=982&url=https%3A%2F%2Fwww.ubereats.com%2Ffeed%3FdiningMode%3DDELIVERY%26pl%3DJTdCJTIyYWRkcmVzcyUyMiUzQSUyMjgwOCUyMENvbHVtYnVzJTIwQXZlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyOWRhYWNiODYtMzA3NC1iZmIzLTE1YTYtNGIwODNlNWQ2N2I3JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC43OTQ3MTElMkMlMjJsb25naXR1ZGUlMjIlM0EtNzMuOTY2NzUxJTdE&ref=https%3A%2F%2Fauth.uber.com%2F&hn=www.googleadservices.com&frm=0&tiba=Order%20Food%20Online%20%7C%20Food%20Delivery%20App%20%7C%20Uber%20Eats&userId=e20ef45e-c42f-496f-9f27-a45eb316fdfb&ga_uid=G-P1RM71MPFP.e20ef45e-c42f-496f-9f27-a45eb316fdfb&did=dYmQxMT&gdid=dYmQxMT&npa=0&pscdl=noapi&auid=1807822586.1753279619&uaa=arm&uab=64&uafvl=Not)A%253BBrand%3B8.0.0.0%7CChromium%3B138.0.7204.158%7CGoogle%2520Chrome%3B138.0.7204.158&uamb=0&uam=&uap=macOS&uapv=15.5.0&uaw=0&data=event%3Dgtag.config%3Benable_event_matching_conversions%3Dfalse&rfmt=3&fmt=3&is_vtc=1&cid=CAQSlgEA2abss7m3SVdrtiI6bhzv8aMn8F3PfooWtKFxmGsqrtTEcYfesNzDnUO6skkpcgXZdQ0YfMTOhEzOwC_fvxPuKN_mNxVPiQPSGIcsy1XM3Tq4kwYeuOYTReozuI49VQul4P7UCaJRrUMh_pnkWd46OUe79EsjAOawts5-ErAPqWiVHC50fiRlo7RcIyuIvJPo6AGgWPc&random=682743792&rmt_tld=0&ipr=y</div>`)[0];
+                popup_4f23d66ac7d56f468dc7cd25213f0110.setContent(html_43ca7470556f0544c8796589d825c1a3);
+            
+        
+
+        marker_fdf51052e375fd1dd4a5b4d20a1aa80c.bindPopup(popup_4f23d66ac7d56f468dc7cd25213f0110)
+        ;
+
+        
+    
+    
+                marker_fdf51052e375fd1dd4a5b4d20a1aa80c.setIcon(icon_9866caa826db6755850ebefcd84687c7);
+            
+    
+            var marker_9d71b5ba3a67706d80ab19fcf4ffa47d = L.marker(
+                [39.0437, -77.4875],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_428716624e963958f90f95edc446c426 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8004b25d644f0a2d8ef798d4647fe76b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6906a5ebb589ff5c5fe046fa916c8590 = $(`<div id="html_6906a5ebb589ff5c5fe046fa916c8590" style="width: 100.0%; height: 100.0%;">IP: 52.7.151.245<br>URL: https://dx.mountain.com/spx?dxver=4.0.0&shaid=34411&tdr=https%3A%2F%2Fauth.uber.com%2F&plh=https%3A%2F%2Fwww.ubereats.com%2Ffeed%3FdiningMode%3DDELIVERY%26pl%3DJTdCJTIyYWRkcmVzcyUyMiUzQSUyMjgwOCUyMENvbHVtYnVzJTIwQXZlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyOWRhYWNiODYtMzA3NC1iZmIzLTE1YTYtNGIwODNlNWQ2N2I3JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC43OTQ3MTElMkMlMjJsb25naXR1ZGUlMjIlM0EtNzMuOTY2NzUxJTdE&cb=3784776327425709</div>`)[0];
+                popup_8004b25d644f0a2d8ef798d4647fe76b.setContent(html_6906a5ebb589ff5c5fe046fa916c8590);
+            
+        
+
+        marker_9d71b5ba3a67706d80ab19fcf4ffa47d.bindPopup(popup_8004b25d644f0a2d8ef798d4647fe76b)
+        ;
+
+        
+    
+    
+                marker_9d71b5ba3a67706d80ab19fcf4ffa47d.setIcon(icon_428716624e963958f90f95edc446c426);
+            
+    
+            var marker_e04aebac9577bf702a8963fc05448751 = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_6d0340ded5abbb55c45ea25600e50c0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05efc63de51c847ae83a450202e3e54c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1aefa0dea0dde9ae6122156d853d3da1 = $(`<div id="html_1aefa0dea0dde9ae6122156d853d3da1" style="width: 100.0%; height: 100.0%;">IP: 2001:4998:1c:800::1001<br>URL: https://s.yimg.com/wi/config/10001384.json</div>`)[0];
+                popup_05efc63de51c847ae83a450202e3e54c.setContent(html_1aefa0dea0dde9ae6122156d853d3da1);
+            
+        
+
+        marker_e04aebac9577bf702a8963fc05448751.bindPopup(popup_05efc63de51c847ae83a450202e3e54c)
+        ;
+
+        
+    
+    
+                marker_e04aebac9577bf702a8963fc05448751.setIcon(icon_6d0340ded5abbb55c45ea25600e50c0e);
+            
+    
+            var marker_9012573fabd7ba348127d760c1269490 = L.marker(
+                [39.0437, -77.4875],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_31448112efcc895ac4fdf2986a013b8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f70edd3931dc1a9de8bb3407736dc6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12a3798e280ecf55dcb8cc9859ba2e1e = $(`<div id="html_12a3798e280ecf55dcb8cc9859ba2e1e" style="width: 100.0%; height: 100.0%;">IP: 52.22.50.55<br>URL: https://52.22.50.55/is?cb=1753280586412</div>`)[0];
+                popup_7f70edd3931dc1a9de8bb3407736dc6b.setContent(html_12a3798e280ecf55dcb8cc9859ba2e1e);
+            
+        
+
+        marker_9012573fabd7ba348127d760c1269490.bindPopup(popup_7f70edd3931dc1a9de8bb3407736dc6b)
+        ;
+
+        
+    
+    
+                marker_9012573fabd7ba348127d760c1269490.setIcon(icon_31448112efcc895ac4fdf2986a013b8a);
+            
+    
+            var marker_a92691fbba6a3e69081f4b85b2741a57 = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_53cd46376f664cacacb3fa505184bd4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78b44a60440968b5014f3c5c100cee74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a33e983160720ad9eba5340eaa124a8a = $(`<div id="html_a33e983160720ad9eba5340eaa124a8a" style="width: 100.0%; height: 100.0%;">IP: 3.171.131.139<br>URL: https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Placeholder_Takeout@3x.png</div>`)[0];
+                popup_78b44a60440968b5014f3c5c100cee74.setContent(html_a33e983160720ad9eba5340eaa124a8a);
+            
+        
+
+        marker_a92691fbba6a3e69081f4b85b2741a57.bindPopup(popup_78b44a60440968b5014f3c5c100cee74)
+        ;
+
+        
+    
+    
+                marker_a92691fbba6a3e69081f4b85b2741a57.setIcon(icon_53cd46376f664cacacb3fa505184bd4d);
+            
+    
+            var marker_50a56cd6d177209e1425ac3b7c91db24 = L.marker(
+                [40.7895, -74.0565],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_07b19d1a9ed40901af9a11bb543930c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2faf0bfce5e68e8ee618339d90cac169 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74d79a7b1d9291de92b9f8675552a6f9 = $(`<div id="html_74d79a7b1d9291de92b9f8675552a6f9" style="width: 100.0%; height: 100.0%;">IP: 2a03:2880:f112:83:face:b00c:0:25de<br>URL: https://www.facebook.com/tr/?id=920222691346894&ev=ViewContent&dl=https%3A%2F%2Fwww.ubereats.com%2Fstore%2Fbomi-flowers-plants-%2526-gifts-brooklyn%2FSLyulcHjXZq5zinOAGX6CQ&rl=https%3A%2F%2Fauth.uber.com%2F&if=false&ts=1753280600615&cd[currency]=USD&cd[language]=en-US&cd[url]=https%3A%2F%2Fwww.ubereats.com%2Fstore%2Fbomi-flowers-plants-%2526-gifts-brooklyn%2FSLyulcHjXZq5zinOAGX6CQ&cd[content_type]=%5B%22product%22%2C%22local_service_business%22%5D&cd[content_ids]=%5B%2248bcae95-c1e3-5d9a-b9ce-29ce0065fa09%22%5D&sw=1512&sh=982&cud[external_id]=*%23%23**%23%23*-*%23%23*-%23%23%23*-%23*%23%23-*%23%23**%23%23%23****&ncud[external_id]=*%23%23**%23%23*-*%23%23*-%23%23%23*-%23*%23%23-*%23%23**%23%23%23****&ud[external_id]=79e25c13d308a71c98a8074df85954724a718079b7b6c2a42d031298c58be332&v=2.9.219&r=stable&a=tmtealium&ec=4&o=12318&fbp=fb.1.1753279619630.672660260111860025&ler=other&cdl=API_unavailable&plt=470.09999999403954&it=1753280532161&coo=false&tm=1&exp=q3&rqm=GET</div>`)[0];
+                popup_2faf0bfce5e68e8ee618339d90cac169.setContent(html_74d79a7b1d9291de92b9f8675552a6f9);
+            
+        
+
+        marker_50a56cd6d177209e1425ac3b7c91db24.bindPopup(popup_2faf0bfce5e68e8ee618339d90cac169)
+        ;
+
+        
+    
+    
+                marker_50a56cd6d177209e1425ac3b7c91db24.setIcon(icon_07b19d1a9ed40901af9a11bb543930c0);
+            
+    
+            var marker_e7bc177887813b49e64dc0eaa9fae34e = L.marker(
+                [39.0997, -94.5786],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_40834f9816fd4bf90c4590deb39f8f56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dedb23fab10cfa2c0f4b73d2803b643a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a597c9d834bf2094ad335c3bd0f2db4 = $(`<div id="html_2a597c9d834bf2094ad335c3bd0f2db4" style="width: 100.0%; height: 100.0%;">IP: 35.190.43.134<br>URL: https://tr.snapchat.com/config/com/576e110e-0521-4739-a7e1-cb1f01685e66.js?v=3.47.7-2506252108</div>`)[0];
+                popup_dedb23fab10cfa2c0f4b73d2803b643a.setContent(html_2a597c9d834bf2094ad335c3bd0f2db4);
+            
+        
+
+        marker_e7bc177887813b49e64dc0eaa9fae34e.bindPopup(popup_dedb23fab10cfa2c0f4b73d2803b643a)
+        ;
+
+        
+    
+    
+                marker_e7bc177887813b49e64dc0eaa9fae34e.setIcon(icon_40834f9816fd4bf90c4590deb39f8f56);
+            
+    
+            var marker_e226bdba0eac34b5a8d1b89d0158e17c = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_d1bd1f7c1a3a111bfbb39fb7b8911aa0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10c409166f7d17e5615e55f0d796cf58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6a0c7d1c13df7bac049b03ce9c8ec2c = $(`<div id="html_b6a0c7d1c13df7bac049b03ce9c8ec2c" style="width: 100.0%; height: 100.0%;">IP: 23.216.132.170<br>URL: https://analytics.tiktok.com/api/v2/pixel</div>`)[0];
+                popup_10c409166f7d17e5615e55f0d796cf58.setContent(html_b6a0c7d1c13df7bac049b03ce9c8ec2c);
+            
+        
+
+        marker_e226bdba0eac34b5a8d1b89d0158e17c.bindPopup(popup_10c409166f7d17e5615e55f0d796cf58)
+        ;
+
+        
+    
+    
+                marker_e226bdba0eac34b5a8d1b89d0158e17c.setIcon(icon_d1bd1f7c1a3a111bfbb39fb7b8911aa0);
+            
+    
+            var marker_6d0a2a7a0dd5e7dd10fc49aaf6dee20b = L.marker(
+                [39.0437, -77.4875],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_0454b9116d84f68f91dc3c30679761b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90cd6775c583c54a98b17fc0f476c711 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ae7ee8a939dbda4ade7bb898c98ce82 = $(`<div id="html_0ae7ee8a939dbda4ade7bb898c98ce82" style="width: 100.0%; height: 100.0%;">IP: 18.210.229.244<br>URL: https://18.210.229.244/is?cb=1753280600875</div>`)[0];
+                popup_90cd6775c583c54a98b17fc0f476c711.setContent(html_0ae7ee8a939dbda4ade7bb898c98ce82);
+            
+        
+
+        marker_6d0a2a7a0dd5e7dd10fc49aaf6dee20b.bindPopup(popup_90cd6775c583c54a98b17fc0f476c711)
+        ;
+
+        
+    
+    
+                marker_6d0a2a7a0dd5e7dd10fc49aaf6dee20b.setIcon(icon_0454b9116d84f68f91dc3c30679761b5);
+            
+    
+            var marker_ee10d4900937a6e7a8ceab21c867cb63 = L.marker(
+                [37.7621, -122.3971],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_2eba30398a284b113f320d130a7535d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7d219aed4a52a64686cdf0451b9d792 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41d9953d9943fb368eaa223fe252009d = $(`<div id="html_41d9953d9943fb368eaa223fe252009d" style="width: 100.0%; height: 100.0%;">IP: 172.66.0.227<br>URL: https://analytics.twitter.com/1/i/adsct?bci=4&dv=America%2FNew_York%26en-US%2Cen%2Czh-CN%26Google%20Inc.%26MacIntel%26127%261512%26982%2610%2630%261512%26944%260%26na&eci=4&email_address=7f89665582e8d1a5b0910815a15167f9b331d0016001676aeb431af1e1fa1e21&event=%7B%22contents%22%3A%5B%7B%22contents%22%3A%22d679771b-770e-440b-8a46-656b8b51a1de%22%7D%2C%7B%22contents%22%3A%227563919e-5f5e-501f-b494-1a81ec81c429%22%7D%2C%7B%22contents%22%3A%22cf70b3ba-d372-576a-b4c9-b4dd749c5333%22%7D%2C%7B%22contents%22%3A%22a56671b0-7bf5-5cde-ab8e-cf27abb52447%22%7D%2C%7B%22contents%22%3A%2229cc0a8e-ad62-5b31-bc09-27d668048311%22%7D%2C%7B%22contents%22%3A%22944897d9-2cd4-503c-8137-3a363a11c8d4%22%7D%2C%7B%22contents%22%3A%22d038858f-c582-55d8-9f9a-8c7b3210029d%22%7D%2C%7B%22contents%22%3A%22eadda304-49f6-522f-8bc6-a87048c88827%22%7D%2C%7B%22contents%22%3A%228bb054e2-7312-4d3a-a5fe-d21f582c2f75%22%7D%2C%7B%22contents%22%3A%224ded7e6a-f211-5730-bb07-cdd48bb1736f%22%7D%5D%2C%22currency%22%3A%22USD%22%2C%22conversion_id%22%3A%2218c69cf4ee04dd9e322fcf2ff0382860%22%7D&event_id=7d76a305-a293-4cc9-b333-f2ed9cf2cc78&integration=advertiser&p_id=Twitter&p_user_id=0&pl_id=f1d94631-c8bc-41d9-8e59-120674cc9843&tw_document_href=https%3A%2F%2Fwww.ubereats.com%2Ffeed%3FdiningMode%3DDELIVERY%26pl%3DJTdCJTIyYWRkcmVzcyUyMiUzQSUyMjgwOCUyMENvbHVtYnVzJTIwQXZlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyOWRhYWNiODYtMzA3NC1iZmIzLTE1YTYtNGIwODNlNWQ2N2I3JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC43OTQ3MTElMkMlMjJsb25naXR1ZGUlMjIlM0EtNzMuOTY2NzUxJTdE&tw_iframe_status=0&txn_id=tw-o43i6-oc3wx&type=javascript&version=2.3.33</div>`)[0];
+                popup_a7d219aed4a52a64686cdf0451b9d792.setContent(html_41d9953d9943fb368eaa223fe252009d);
+            
+        
+
+        marker_ee10d4900937a6e7a8ceab21c867cb63.bindPopup(popup_a7d219aed4a52a64686cdf0451b9d792)
+        ;
+
+        
+    
+    
+                marker_ee10d4900937a6e7a8ceab21c867cb63.setIcon(icon_2eba30398a284b113f320d130a7535d1);
+            
+    
+            var marker_30ee050d65026fb28ce45dc32b9d5dca = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_71086b167e61fc3f741917e611524aaa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8007a0fdd37dcf3b969c10e79585ac18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6a3325b4d7222986daa53daf74a424f = $(`<div id="html_c6a3325b4d7222986daa53daf74a424f" style="width: 100.0%; height: 100.0%;">IP: 18.173.130.98<br>URL: https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/276edd4275dda838.woff2</div>`)[0];
+                popup_8007a0fdd37dcf3b969c10e79585ac18.setContent(html_c6a3325b4d7222986daa53daf74a424f);
+            
+        
+
+        marker_30ee050d65026fb28ce45dc32b9d5dca.bindPopup(popup_8007a0fdd37dcf3b969c10e79585ac18)
+        ;
+
+        
+    
+    
+                marker_30ee050d65026fb28ce45dc32b9d5dca.setIcon(icon_71086b167e61fc3f741917e611524aaa);
+            
+    
+            var marker_d5645649227f1c14747b1c6c1c3f97e4 = L.marker(
+                [45.8399, -119.7006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_574865b4fdcd4a8b0d7bf39fae985d5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_21867f5eb67489fb4867f02a050e309c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49adeb79fc7324b06f3920dc9db7ebfe = $(`<div id="html_49adeb79fc7324b06f3920dc9db7ebfe" style="width: 100.0%; height: 100.0%;">IP: 35.85.106.161<br>URL: https://px.mountain.com/st?ga_tracking_id=G-1111111&ga_client_id=1714041780.1753279620&shpt=Order%20Food%20Online%20%7C%20Food%20Delivery%20App%20%7C%20Uber%20Eats&dcm_cid=1714041780.1753279620&available_ga=%5B%7B%22id%22%3A%22G-P1RM71MPFP%22%2C%22sess_id%22%3A%221753279619%22%7D%5D&ga_info=%7B%22status%22%3A%22OK%22%2C%22available_ga%22%3A%5B%7B%22id%22%3A%22G-P1RM71MPFP%22%2C%22sess_id%22%3A%221753279619%22%7D%5D%2C%22hardcoded_ga%22%3A%22G-1111111%22%2C%22ga_tracking_id%22%3A%22G-1111111%22%2C%22ga_client_id%22%3A%221714041780.1753279620%22%2C%22shpt%22%3A%22Order%20Food%20Online%20%7C%20Food%20Delivery%20App%20%7C%20Uber%20Eats%22%2C%22dcm_cid%22%3A%221714041780.1753279620%22%2C%22mntnis%22%3A%22BxkRheN13bhegwXIRYDPxz%2BDslaYu7cG%22%2C%22execution_workflow%22%3A%7B%22iteration%22%3A1%2C%22getClientIdByCookie%22%3A%22OK%22%2C%22shpt%22%3A%22OK%22%2C%22dcm_cid%22%3A%22OK%22%7D%7D&hardcoded_ga=G-1111111&meta_tag_data=%5B%7B%22robots.content%22%3A%22noindex%2C%20nofollow%22%7D%5D&dxver=4.0.0&shaid=34411&tdr=https%3A%2F%2Fauth.uber.com%2F&plh=https%3A%2F%2Fwww.ubereats.com%2Ffeed%3FdiningMode%3DDELIVERY%26pl%3DJTdCJTIyYWRkcmVzcyUyMiUzQSUyMjgwOCUyMENvbHVtYnVzJTIwQXZlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyOWRhYWNiODYtMzA3NC1iZmIzLTE1YTYtNGIwODNlNWQ2N2I3JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC43OTQ3MTElMkMlMjJsb25naXR1ZGUlMjIlM0EtNzMuOTY2NzUxJTdE&cb=95498972422045170&shadditional=googletagmanager%3Dtrue%2Cga4%3Dtrue%2Ctealium%3Dtrue</div>`)[0];
+                popup_21867f5eb67489fb4867f02a050e309c.setContent(html_49adeb79fc7324b06f3920dc9db7ebfe);
+            
+        
+
+        marker_d5645649227f1c14747b1c6c1c3f97e4.bindPopup(popup_21867f5eb67489fb4867f02a050e309c)
+        ;
+
+        
+    
+    
+                marker_d5645649227f1c14747b1c6c1c3f97e4.setIcon(icon_574865b4fdcd4a8b0d7bf39fae985d5d);
+            
+    
+            var marker_67abbb8c238b89574971074bf3755108 = L.marker(
+                [35.6895, 139.6917],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_ac823c5b895a6fd6f1e9f4d330a4456f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70d05eb33ad7346b89af4ee32aae2ebd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39a65e7feab66f5ba643ef6a7cad61d1 = $(`<div id="html_39a65e7feab66f5ba643ef6a7cad61d1" style="width: 100.0%; height: 100.0%;">IP: 182.22.28.252<br>URL: https://s.yimg.jp/images/listing/tool/cv/ytag.js</div>`)[0];
+                popup_70d05eb33ad7346b89af4ee32aae2ebd.setContent(html_39a65e7feab66f5ba643ef6a7cad61d1);
+            
+        
+
+        marker_67abbb8c238b89574971074bf3755108.bindPopup(popup_70d05eb33ad7346b89af4ee32aae2ebd)
+        ;
+
+        
+    
+    
+                marker_67abbb8c238b89574971074bf3755108.setIcon(icon_ac823c5b895a6fd6f1e9f4d330a4456f);
+            
+    
+            var marker_13a0d9e74a24a566d87e7151702d7b90 = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_9181b3c64f4fe430c37d5c78e0b5e7d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55587de9b8c9a6f2a183e2334307e2f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_305aeda07a1ff068e6ee17e26967eb9a = $(`<div id="html_305aeda07a1ff068e6ee17e26967eb9a" style="width: 100.0%; height: 100.0%;">IP: 108.139.33.128<br>URL: https://js.adsrvr.org/up_loader.1.1.0.js</div>`)[0];
+                popup_55587de9b8c9a6f2a183e2334307e2f3.setContent(html_305aeda07a1ff068e6ee17e26967eb9a);
+            
+        
+
+        marker_13a0d9e74a24a566d87e7151702d7b90.bindPopup(popup_55587de9b8c9a6f2a183e2334307e2f3)
+        ;
+
+        
+    
+    
+                marker_13a0d9e74a24a566d87e7151702d7b90.setIcon(icon_9181b3c64f4fe430c37d5c78e0b5e7d9);
+            
+    
+            var marker_babcd1e57d99a32d700246f3db30d2e3 = L.marker(
+                [47.674, -122.1215],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_bc356d4414eec4b452d78ca0ff5037bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9d8585f79154254a790ef3351b7b4bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5328eeb5baba3e3400939cf26f914f62 = $(`<div id="html_5328eeb5baba3e3400939cf26f914f62" style="width: 100.0%; height: 100.0%;">IP: 2620:1ec:bdf::40<br>URL: https://www.clarity.ms/tag/uet/4050272?insights=1</div>`)[0];
+                popup_b9d8585f79154254a790ef3351b7b4bd.setContent(html_5328eeb5baba3e3400939cf26f914f62);
+            
+        
+
+        marker_babcd1e57d99a32d700246f3db30d2e3.bindPopup(popup_b9d8585f79154254a790ef3351b7b4bd)
+        ;
+
+        
+    
+    
+                marker_babcd1e57d99a32d700246f3db30d2e3.setIcon(icon_bc356d4414eec4b452d78ca0ff5037bf);
+            
+    
+            var marker_ac42d8bc033af6f3c4db7934e0bff363 = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_31eab584b60a4bb9f0a328b534972b3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b307d9f52435173df92d8c64a0a1ddbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77b720a9448d860516ef948853eee1fb = $(`<div id="html_77b720a9448d860516ef948853eee1fb" style="width: 100.0%; height: 100.0%;">IP: 2607:f8b0:4006:808::2008<br>URL: https://www.googletagmanager.com/gtag/js?id=G-P1RM71MPFP&cx=c&gtm=45fe57l1v9189983210za200&tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~104952209~104952211</div>`)[0];
+                popup_b307d9f52435173df92d8c64a0a1ddbf.setContent(html_77b720a9448d860516ef948853eee1fb);
+            
+        
+
+        marker_ac42d8bc033af6f3c4db7934e0bff363.bindPopup(popup_b307d9f52435173df92d8c64a0a1ddbf)
+        ;
+
+        
+    
+    
+                marker_ac42d8bc033af6f3c4db7934e0bff363.setIcon(icon_31eab584b60a4bb9f0a328b534972b3e);
+            
+    
+            var marker_6633b03c6b5a6ef9f66662d40a366ac0 = L.marker(
+                [39.0437, -77.4875],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_2caf668ad72256f2f1b32d391fefac0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54bcbf75ad2bcfe3381eb0b65b205d47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b941bc82c96ab4bd7e583c2342565907 = $(`<div id="html_b941bc82c96ab4bd7e583c2342565907" style="width: 100.0%; height: 100.0%;">IP: 98.82.156.207<br>URL: https://s.amazon-adsystem.com/iu3?pid=c60a8a71-60af-43f5-bfd9-287ba6caf848&event=Pageview&ts=1753280532212&eventSource=amzn.js&uuid=880c5fda-d775-46ed-be8d-ec652394c5e9</div>`)[0];
+                popup_54bcbf75ad2bcfe3381eb0b65b205d47.setContent(html_b941bc82c96ab4bd7e583c2342565907);
+            
+        
+
+        marker_6633b03c6b5a6ef9f66662d40a366ac0.bindPopup(popup_54bcbf75ad2bcfe3381eb0b65b205d47)
+        ;
+
+        
+    
+    
+                marker_6633b03c6b5a6ef9f66662d40a366ac0.setIcon(icon_2caf668ad72256f2f1b32d391fefac0c);
+            
+    
+            var marker_202917771afb4f97a18367e8da6c18e1 = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_e6fdfc4ee92a1a94f1879573e6f3d2c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b81694dd3da370abe60f347e544cd12b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_093291e5de8f845de879b3aadb3fa0a7 = $(`<div id="html_093291e5de8f845de879b3aadb3fa0a7" style="width: 100.0%; height: 100.0%;">IP: 2607:f8b0:4006:820::200e<br>URL: https://www.google-analytics.com/privacy-sandbox/register-conversion?_c=1&cid=1714041780.1753279620&dbk=824064083023724454&dma=0&en=search&gtm=45je57l1v892266022za200zb9189983210zd9189983210&npa=0&tid=G-P1RM71MPFP&dl=https%3A%2F%2Fwww.ubereats.com%3F</div>`)[0];
+                popup_b81694dd3da370abe60f347e544cd12b.setContent(html_093291e5de8f845de879b3aadb3fa0a7);
+            
+        
+
+        marker_202917771afb4f97a18367e8da6c18e1.bindPopup(popup_b81694dd3da370abe60f347e544cd12b)
+        ;
+
+        
+    
+    
+                marker_202917771afb4f97a18367e8da6c18e1.setIcon(icon_e6fdfc4ee92a1a94f1879573e6f3d2c4);
+            
+    
+            var marker_62b346cda2ffe2943eb6f284afd08d52 = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_fe77e5f5c1b5377143762e9581d45ba8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53dc7969cf3c8524c46afe3faf5ffc88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2adc5badcea3f47b031a2983aace6958 = $(`<div id="html_2adc5badcea3f47b031a2983aace6958" style="width: 100.0%; height: 100.0%;">IP: 108.138.112.90<br>URL: https://c.amazon-adsystem.com/aat/amzn.js</div>`)[0];
+                popup_53dc7969cf3c8524c46afe3faf5ffc88.setContent(html_2adc5badcea3f47b031a2983aace6958);
+            
+        
+
+        marker_62b346cda2ffe2943eb6f284afd08d52.bindPopup(popup_53dc7969cf3c8524c46afe3faf5ffc88)
+        ;
+
+        
+    
+    
+                marker_62b346cda2ffe2943eb6f284afd08d52.setIcon(icon_fe77e5f5c1b5377143762e9581d45ba8);
+            
+    
+            var marker_7a4ac7e877ed20f1b712c9c21f2e79ae = L.marker(
+                [40.7895, -74.0565],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_ab8aa0860e7dc653ee0c9b2b19aad861 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e05fff00feca5cb6b45c29569611057 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9412f2533d635f688f8baa6053381a8 = $(`<div id="html_c9412f2533d635f688f8baa6053381a8" style="width: 100.0%; height: 100.0%;">IP: 2a03:2880:f35a:80:face:b00c:0:3<br>URL: https://connect.facebook.net/signals/config/920222691346894?v=2.9.219&r=stable&domain=www.ubereats.com&hme=6531127cc5702b048f1a4e2975833edefec3a60f8f391fe8ffb9a77b3d2626d1&ex_m=83%2C143%2C124%2C18%2C117%2C58%2C40%2C118%2C64%2C57%2C131%2C72%2C13%2C82%2C26%2C112%2C103%2C62%2C65%2C111%2C128%2C91%2C133%2C7%2C3%2C4%2C6%2C5%2C2%2C73%2C81%2C134%2C206%2C155%2C52%2C211%2C208%2C209%2C45%2C170%2C25%2C61%2C215%2C214%2C158%2C28%2C51%2C8%2C54%2C77%2C78%2C79%2C84%2C107%2C27%2C24%2C110%2C106%2C105%2C125%2C63%2C127%2C126%2C41%2C108%2C50%2C100%2C12%2C130%2C37%2C197%2C199%2C165%2C21%2C22%2C23%2C15%2C16%2C36%2C33%2C34%2C68%2C74%2C76%2C89%2C116%2C119%2C38%2C90%2C19%2C17%2C94%2C59%2C31%2C121%2C120%2C122%2C113%2C20%2C30%2C49%2C88%2C129%2C29%2C180%2C151%2C86%2C109%2C67%2C98%2C44%2C39%2C96%2C97%2C102%2C48%2C14%2C104%2C95%2C55%2C43%2C46%2C0%2C80%2C132%2C1%2C101%2C11%2C99%2C255%2C195%2C141%2C183%2C176%2C9%2C47%2C75%2C53%2C123%2C56%2C93%2C71%2C70%2C42%2C114%2C69%2C66%2C60%2C92%2C85%2C35%2C115%2C32%2C87%2C10%2C135</div>`)[0];
+                popup_2e05fff00feca5cb6b45c29569611057.setContent(html_c9412f2533d635f688f8baa6053381a8);
+            
+        
+
+        marker_7a4ac7e877ed20f1b712c9c21f2e79ae.bindPopup(popup_2e05fff00feca5cb6b45c29569611057)
+        ;
+
+        
+    
+    
+                marker_7a4ac7e877ed20f1b712c9c21f2e79ae.setIcon(icon_ab8aa0860e7dc653ee0c9b2b19aad861);
+            
+    
+            var marker_76ba4574fa808a9de7a1e8429c1f8871 = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_cf25c5909e7374ab5d89a60ad33127d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_644d3b3352fe55b5dbe36ecb241fbbce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ff57dd68c315590d5e1d3f7f960dcc3 = $(`<div id="html_1ff57dd68c315590d5e1d3f7f960dcc3" style="width: 100.0%; height: 100.0%;">IP: 18.173.132.73<br>URL: https://ara.paa-reporting-advertising.amazon/aat?pid=c60a8a71-60af-43f5-bfd9-287ba6caf848&event=Pageview&ts=1753280532212&eventSource=amzn.js&uuid=880c5fda-d775-46ed-be8d-ec652394c5e9</div>`)[0];
+                popup_644d3b3352fe55b5dbe36ecb241fbbce.setContent(html_1ff57dd68c315590d5e1d3f7f960dcc3);
+            
+        
+
+        marker_76ba4574fa808a9de7a1e8429c1f8871.bindPopup(popup_644d3b3352fe55b5dbe36ecb241fbbce)
+        ;
+
+        
+    
+    
+                marker_76ba4574fa808a9de7a1e8429c1f8871.setIcon(icon_cf25c5909e7374ab5d89a60ad33127d3);
+            
+    
+            var marker_75e677bf8d91b0b837acd14a99d56581 = L.marker(
+                [39.0437, -77.4875],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_8c299e72aa8d640d837e4c06b37eedfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4218d1314860a705947ad1aec7e509b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_728660d92a536d4c66d514a132aa0c89 = $(`<div id="html_728660d92a536d4c66d514a132aa0c89" style="width: 100.0%; height: 100.0%;">IP: 54.156.2.105<br>URL: https://54.156.2.105/is?cb=1753280534728</div>`)[0];
+                popup_4218d1314860a705947ad1aec7e509b2.setContent(html_728660d92a536d4c66d514a132aa0c89);
+            
+        
+
+        marker_75e677bf8d91b0b837acd14a99d56581.bindPopup(popup_4218d1314860a705947ad1aec7e509b2)
+        ;
+
+        
+    
+    
+                marker_75e677bf8d91b0b837acd14a99d56581.setIcon(icon_8c299e72aa8d640d837e4c06b37eedfe);
+            
+    
+            var marker_5454ca7fc9da995ee1c5bf143542d317 = L.marker(
+                [39.0437, -77.4875],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_01a83c3e475e45ed1afa060cd3e77b23 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30ad8e043c74a392fd7abfe2230f55ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4da638cec2fb54a8171d5aebf2df010e = $(`<div id="html_4da638cec2fb54a8171d5aebf2df010e" style="width: 100.0%; height: 100.0%;">IP: 52.71.121.170<br>URL: https://52.71.121.170/is?cb=1753280534729</div>`)[0];
+                popup_30ad8e043c74a392fd7abfe2230f55ac.setContent(html_4da638cec2fb54a8171d5aebf2df010e);
+            
+        
+
+        marker_5454ca7fc9da995ee1c5bf143542d317.bindPopup(popup_30ad8e043c74a392fd7abfe2230f55ac)
+        ;
+
+        
+    
+    
+                marker_5454ca7fc9da995ee1c5bf143542d317.setIcon(icon_01a83c3e475e45ed1afa060cd3e77b23);
+            
+    
+            var marker_ccb9f5004171e1ae021d11d99d1d0af6 = L.marker(
+                [47.6062, -122.3321],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_06714c0f325f99a6b2cdcfa0811eddfe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b821bda677e5c55dcaab3bdda7c5523 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1daafe1953bac0fe89b1ebf9d1a0dae5 = $(`<div id="html_1daafe1953bac0fe89b1ebf9d1a0dae5" style="width: 100.0%; height: 100.0%;">IP: 3.163.245.4<br>URL: https://sc-static.net/scevent.min.js</div>`)[0];
+                popup_6b821bda677e5c55dcaab3bdda7c5523.setContent(html_1daafe1953bac0fe89b1ebf9d1a0dae5);
+            
+        
+
+        marker_ccb9f5004171e1ae021d11d99d1d0af6.bindPopup(popup_6b821bda677e5c55dcaab3bdda7c5523)
+        ;
+
+        
+    
+    
+                marker_ccb9f5004171e1ae021d11d99d1d0af6.setIcon(icon_06714c0f325f99a6b2cdcfa0811eddfe);
+            
+    
+            var marker_c0199c9ed4830ffa64939437acf27696 = L.marker(
+                [47.6062, -122.3321],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_4f177ee0c80730660287fb9102024a8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9cfb1300420081fae6547c44f6afdd8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4b4d31da0f09df9b3360df7d63d53b6 = $(`<div id="html_f4b4d31da0f09df9b3360df7d63d53b6" style="width: 100.0%; height: 100.0%;">IP: 2600:9000:24f1:9000:16:ebbc:df40:21<br>URL: https://dkl8of78aprwd.cloudfront.net/uber_one@3x.png</div>`)[0];
+                popup_c9cfb1300420081fae6547c44f6afdd8.setContent(html_f4b4d31da0f09df9b3360df7d63d53b6);
+            
+        
+
+        marker_c0199c9ed4830ffa64939437acf27696.bindPopup(popup_c9cfb1300420081fae6547c44f6afdd8)
+        ;
+
+        
+    
+    
+                marker_c0199c9ed4830ffa64939437acf27696.setIcon(icon_4f177ee0c80730660287fb9102024a8d);
+            
+    
+            var marker_d2b233391b4e2af61bda11b6d4643a98 = L.marker(
+                [40.7143, -74.006],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_58ab0a63ff42b3bfd7311e56a125311a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_160990ca75fe32f7511a110a7e0e8929 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_619e2748928ae5eb9e7b9b210f0a0c35 = $(`<div id="html_619e2748928ae5eb9e7b9b210f0a0c35" style="width: 100.0%; height: 100.0%;">IP: 199.232.36.157<br>URL: https://static.ads-twitter.com/uwt.js</div>`)[0];
+                popup_160990ca75fe32f7511a110a7e0e8929.setContent(html_619e2748928ae5eb9e7b9b210f0a0c35);
+            
+        
+
+        marker_d2b233391b4e2af61bda11b6d4643a98.bindPopup(popup_160990ca75fe32f7511a110a7e0e8929)
+        ;
+
+        
+    
+    
+                marker_d2b233391b4e2af61bda11b6d4643a98.setIcon(icon_58ab0a63ff42b3bfd7311e56a125311a);
+            
+    
+            var marker_65c772b812d4c4f2bff1a382ee029c2d = L.marker(
+                [47.6339, -122.3476],
+                {
+}
+            ).addTo(marker_cluster_ab2ec4613f2745c35b57b829fe1f299c);
+        
+    
+            var icon_dea7b4095a0fa4e8fbd4a56c1fb2995d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6b8d04602b4c59f4fd64988c1cc08ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a4c15033e4bd14ac55af0c2f75d7beb = $(`<div id="html_2a4c15033e4bd14ac55af0c2f75d7beb" style="width: 100.0%; height: 100.0%;">IP: 52.223.40.198<br>URL: https://insight.adsrvr.org/track/cei?adv=7s2vdjp&ref=https%3A%2F%2Fwww.ubereats.com%2Ffeed%3FdiningMode%3DDELIVERY%26pl%3DJTdCJTIyYWRkcmVzcyUyMiUzQSUyMjgwOCUyMENvbHVtYnVzJTIwQXZlJTIyJTJDJTIycmVmZXJlbmNlJTIyJTNBJTIyOWRhYWNiODYtMzA3NC1iZmIzLTE1YTYtNGIwODNlNWQ2N2I3JTIyJTJDJTIycmVmZXJlbmNlVHlwZSUyMiUzQSUyMnViZXJfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E0MC43OTQ3MTElMkMlMjJsb25naXR1ZGUlMjIlM0EtNzMuOTY2NzUxJTdE&upid=xvwp6w4&upv=1.1.0&paapi=1</div>`)[0];
+                popup_c6b8d04602b4c59f4fd64988c1cc08ac.setContent(html_2a4c15033e4bd14ac55af0c2f75d7beb);
+            
+        
+
+        marker_65c772b812d4c4f2bff1a382ee029c2d.bindPopup(popup_c6b8d04602b4c59f4fd64988c1cc08ac)
+        ;
+
+        
+    
+    
+                marker_65c772b812d4c4f2bff1a382ee029c2d.setIcon(icon_dea7b4095a0fa4e8fbd4a56c1fb2995d);
+            
+    
+            marker_cluster_ab2ec4613f2745c35b57b829fe1f299c.addTo(map_206127a25d9c6e34473ed821cbd4e237);
+        
+</script>
+</html>
